@@ -29,12 +29,12 @@ const jwtMW = exjwt({
 let users = [
     {
         id: 1,
-        username:'fabio',
+        username:'swapna',
         password: '123'
     },
     {
         id: 1,
-        username:'nolasco',
+        username:'vootla',
         password: '456'
     }
 ];
@@ -76,7 +76,7 @@ app.get('/api/dashboard', jwtMW, (req,res) => {
 app.get('/api/settings', jwtMW, (req,res) => {
     res.json({
         success: true,
-        myContent: 'Settings: Privacy = Off, Account = public'
+        myContent: 'settings page'
     });
 });
 
